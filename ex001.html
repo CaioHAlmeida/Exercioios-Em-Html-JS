@@ -5,75 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <style>
-        body {
-            font: normal 18pt Arial
-        }
+    <style stl="ex001.css">
     </style>
 </head>
 <body>
     <h1>Calculadora</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="Somar()">
+    <input type="number" id="txtn1"> +
+    <input type="number" id="txtn2">
+    <input type="button" value="Somar" onclick=Somar1>
     <div id="res1" >Resultado</div>
 
-    <input type="number" name="txtn3" id="txtn3"> -
-    <input type="number" name="txtn4" id="txtn4">
-    <input type="button" value="Subitrair" onclick="Subitrair()">
+    <input type="number" id="txtn1"> -
+    <input type="number" id="txtn2">
+    <input type="button" value="Subitrair" onclick=Subitrair1>
     <div id="res2" >Resultado</div>
     
-    <input type="number" name="txtn5" id="txtn5"> •
-    <input type="number" name="txtn6" id="txtn6">
-    <input type="button" value="Multiplicar" onclick="Multiplicar()">
+    <input type="number" id="txtn1"> •
+    <input type="number" id="txtn2">
+    <input type="button" value="Multiplicar" onclick=Multiplicar1>
     <div id="res3" >Resultado</div>
 
-    <input type="number" name="txtn7" id="txtn7"> ÷
-    <input type="number" name="txtn8" id="txtn8">
-    <input type="button" value="Dividir" onclick="Dividir()">
+    <input type="number" id="txtn1"> ÷
+    <input type="number" id="txtn2">
+    <input type="button" value="Dividir" onclick=Dividir1>
     <div id="res4" >Resultado</div>
 
-    <script>
-        //Somar
-        function Somar() {
-         var tn1 = document.getElementById("txtn1")
-         var tn2 = document.getElementById("txtn2")
-         var res1 = document.getElementById("res1")
-         var n1 = Number(tn1.value)
-         var n2 = Number(tn2.value)
-         var s = n1 + n2
-         res1.innerHTML = `A soma de ${n1} e ${n2} é igual a ${s}`
-        }
-        //Subutrair
-        function Subitrair() {
-         var tn3 = document.getElementById("txtn3")
-         var tn4 = document.getElementById("txtn4")
-         var res2 = document.getElementById("res2")
-         var n3 = Number(tn3.value)
-         var n4 = Number(tn4.value)
-         var su = n3 - n4
-         res2.innerHTML = `A diferença de ${n3} e ${n4} é igual a ${su}`
-        }
-        //Multiplicar
-        function Multiplicar() {
-         var tn5 = document.getElementById("txtn5")
-         var tn6 = document.getElementById("txtn6")
-         var res3 = document.getElementById("res3")
-         var n5 = Number(tn5.value)
-         var n6 = Number(tn6.value)
-         var mu = n5 * n6
-         res3.innerHTML = `O produto de ${n5} e ${n6} é igual a ${mu}`
-        }
-        //Dividir
-        function Dividir() {
-         var tn7 = document.getElementById("txtn7")
-         var tn8 = document.getElementById("txtn8")
-         var res4 = document.getElementById("res4")
-         var n7 = Number(tn7.value)
-         var n8 = Number(tn8.value)
-         var di = n7 / n8
-         res4.innerHTML = `O quociente de ${n7} e ${n8} é igual a ${di}`
-        }
-    </script>
+    <script scr="ex001.js"></script>
 </body>
 </html> 
